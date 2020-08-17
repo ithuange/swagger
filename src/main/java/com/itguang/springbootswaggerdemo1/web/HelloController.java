@@ -64,6 +64,7 @@ public class HelloController {
         System.out.println("dwqsacaa");
         System.out.println("dasd");
         System.out.println("fdatsfda");
+        System.out.println("sun");
         System.out.println("sdqwdac00");
         System.out.println("测试数据三");
         return "删除成功";
