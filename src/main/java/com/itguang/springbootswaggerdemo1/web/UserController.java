@@ -16,5 +16,4 @@ public class UserController {
         System.out.println("这是测试二号");
         return "hello";
     }
-
 }
