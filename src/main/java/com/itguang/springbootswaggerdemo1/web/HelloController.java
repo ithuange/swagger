@@ -62,6 +62,7 @@ public class HelloController {
     public String deleteUser(@PathVariable String id) {
         System.out.println("dqq");
         System.out.println("dwqsacaa");
+        System.out.println("dasd");
         System.out.println("sdqwdac00");
         System.out.println("测试数据三");
         return "删除成功";
