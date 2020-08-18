@@ -40,6 +40,7 @@ public class HelloController {
 
     @ApiOperation(value = "创建用户", notes = "根据User对象创建用户")
     @ApiImplicitParam(name = "user", value = "用户详细实体user", required = true, dataType = "User")
+//    @ApiImplicitParam(name = "sd",value = "",required = "",dataType = )
 //    @ApiResponses({ @ApiResponse(code = 400, message = "无效的用户信息") })
     @ApiResponses(@ApiResponse(code = 200,message = "响应成功"))
     @RequestMapping(value = "/create", method = RequestMethod.POST)
@@ -51,7 +52,7 @@ public class HelloController {
     
     @ApiOperation(value = "获取用户的信息",notes = "根据用户的id获取用户的信息")
     @RequestMapping(value = "getUser/{id}", method = RequestMethod.GET)
-
+    @ApiResponses(@ApiResponse(code = 200,message = "响应成功"))
     public User getUser(@ApiParam(value = "用户id", required = true) //[注意] @ApiParam与 Controller中方法并列使用,也可以省略的
                         @PathVariable(value = "id") String id) {
         return new User(id, "itguang", "123456");
